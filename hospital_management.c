@@ -128,3 +128,22 @@ else
 printf("\n\nInvalid Choice \nTry Again!!\n\n");
 }
 }
+void del()
+{
+int f,h;
+printf("Enter the Serial Number of the Patient whose information is to be deleted = ");
+scanf("%d",&f);
+if(f<=num)
+{
+printf("1)Remove Name\n2)Remove Disease\n3)Remove age\n4)Remove Room
+Number\n5)Remove phone number\nYour choice = ");
+scanf("%d",&h);
+if(h<=5)
+{
+printf("Cleared\n");
+}
+else printf("Your Choice is Invalid\n");
+}
+else
+printf("\nPlease enter a valid Serial Number\n");
+}
